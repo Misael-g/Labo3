@@ -5,7 +5,7 @@ let modulo="Mis ordenes"//Sting
 let status= true//boolean
 let tipoPago= 'E'//char
 let precioFinal= 155.99 //float
-const ci=1171765322//int inmutable
+const ci=1728956283//int inmutable
 
 //Tipos de datos Compuestos
 let ordenes =["Balon ", "Camiseta ","Zapatos"] //array
