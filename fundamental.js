@@ -7,7 +7,7 @@ let modulo="Mis ordenes"//Sting
 let status= true//boolean
 let tipoPago= 'E'//char
 let precioFinal= 155.99 //float
-const ci=1171765322//int inmutable
+const ci=172895628555//int inmutable
 
 //Tipos de datos Compuestos
 let ordenes =["Balon ", "Camiseta ","Zapatos"] //array
@@ -78,102 +78,4 @@ else {
 
 //ES6 operador ternario 
 const mensaje =carritoCompras.length ===0? "el carrrito vacio"  : "El carrito con productos"
-
-// sumary
-// internet - Puente que conecta dos dispositivos para intercambiar informacion
-// web- puente que conecta dos dispositivos para intercambiar pagians web 
-// Api -  puente que conecta dos dispositivos para intercambiar recursos 
-
-// js - leguaje de programacion que permite crear páginas web dinámicas e interactivas 
-//v8 compilador de js 
-// node herramienta + v8  que permite ejecutar js en el servidor 
-//ECMASCRIPT reglas para escribir en js 
-//JSON o XML es un estandar abierto  para el cambio de informacion 
-
-
-
-
-
-//Iteradores 
-//objetos :variable de tipo compuesto que permite almacenar varios datos a partir de pares de clave valor
-
-let user ={
-    name : "Misael",
-    lastname:"Garcia",
-    age:30,
-    email:"misael@gmail.com",
-    address:{
-        city:"Quito",
-        telephone:"0967775223"
-    },
-    password:"123456",
-}
-delete user.password
-user.image="avatar.png"
-console.log(user)
-
-
-// ES6 destructuracion 
-let{name,lastname,age,email:correo,address}= user
-console.log(name)
-console.log(lastname)
-console.log(correo)
-console.log(address.city)
-
-
-const friends={
-    status:true,
-    friendlist:["Juan","María"],
-    sendMail(){ return `Send mail to ${friends.friendlist[0]}`}
-}
-const allinformacion={...user,...friends} // para unir la informacion de diferentes objetos 
-console.log(allinformacion)
-console.log(friends.sendMail)
-
-
-console.log(Object.values(user).includes(""))
-
-
-// Funciones conjunto de pasos para realizar una tarea especifica 
-
-//Funcion declarada
-function validateUser(){
-    console.log("usuario validado")
-}
-//Funcion expresada 
-const validateRol= function () {
-    console.log("Rol validado")
-}
-
-
-//ES6 Funcion de flecha 
-const validateMail=()=>{
-    console.log("Mail Validado")
-}
-
-
-//Rest operator vs Spread operator 
-//parametros por defecto (a=56)
-const finalPrice= function({a=56,b},...Rest){
-    console.log(a,b,...Rest)
-}
-finalPrice({b:99},1,2,3,4)
-
-
-
-//Return 
-function typeofReturn(){
-    //return 123
-    //return true
-    //return "Misael"
-    //return ["Juan","Anita"]
-    //return{city:"Quito", country:"Ecuador"}
-    return function(){
-       console.log("Hola")
-    }
-}
-
-console.log(typeofReturn())
-let retsul =typeofReturn()
-retsul()
 
